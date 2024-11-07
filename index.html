@@ -12,8 +12,9 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="assets/css/all.min.css">
 	<!-- bootstrap -->
@@ -49,46 +50,27 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 text-center">
 					<div class="main-menu-wrap">
-						<!-- logo -->
-						<div class="site-logo">
-							<a href="index.html">
-								<img src="assets/img/logo.png" alt="">
-							</a>
-						</div>
-						<!-- logo -->
-
-						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
 								<li class="current-list-item"><a href="index.html">Home</a></li>
-								<li><a href="#">About Us</a>
-									<ul class="sub-menu">
-										<li><a href="#">Our Story</a></li>
-										<li><a href="#">Our Brand</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Export</a>
-									<ul class="sub-menu">
-										<li><a href="#">What Do We Do</a></li>
-										<li><a href="#">Our Export Products</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Canada Market</a>
-									<ul class="sub-menu">
-										<li><a href="#">Wild Tusker Retail & Bulk</a></li>
-										<li><a href="#">Snow Farms Retail & Bulk</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Online Store</a>
-									<ul class="sub-menu">
-										<li><a href="#">404 page</a></li>
-										<li><a href="#">About</a></li>
-										<li><a href="#">Cart</a></li>
-										<li><a href="#">Check Out</a></li>
-										<li><a href="#">Contact</a></li>
-										<li><a href="#">News</a></li>
-										<li><a href="#">Shop</a></li>
-									</ul>
+								<li><a href="#">About Us</a></li>
+								<li class="has-mega-menu"><a href="#">Online Store</a>
+									<div class="mega-menu">
+										<div class="mega-menu-section">
+											<h4>snow farms</h4>
+											<ul>
+												<li><a href="#">Online Store Retail</a></li>
+												<li><a href="#">Online Store Bulk</a></li>
+											</ul>
+										</div>
+										<div class="mega-menu-section">
+											<h4>wild tusker</h4>
+											<ul>
+												<li><a href="#">Online Store Retail</a></li>
+												<li><a href="#">Online Store Bulk</a></li>
+											</ul>
+										</div>
+									</div>
 								</li>
 								<li><a href="#">Blogs & Recipes</a></li>
 								<li><a href="#">FAQS</a></li>
@@ -103,7 +85,6 @@
 						</nav>
 						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 						<div class="mobile-menu"></div>
-						<!-- menu end -->
 					</div>
 				</div>
 			</div>
@@ -212,13 +193,13 @@
 	<!-- end home page slider -->
 
 	<!-- shop banner -->
-	<section class="shop-banner">
+	<!-- <section class="shop-banner">
 		<div class="shop-banner-container">
 			<h3 class="text-uppercase">ONE STOP SHOP</h3>
 			<div class="sale-percent"><span>TROPICAL & CANADIAN PRODUCTS</span></div>
 			<a href="#" class="cart-btn btn-lg">Shop Now</a>
 		</div>
-	</section>
+	</section> -->
 	<!-- end shop banner -->
 
 	<!-- single article section -->
@@ -330,9 +311,75 @@
 					</div>
 				</div>
 			</div>
+			<div class="text-center">
+				<a href="#" class="cart-btn-w-bg btn-lg align-items-center">More Products</a>
+			</div>
 		</div>
 	</div>
 	<!-- end product section -->
+
+	<!-- testimonail-section -->
+	<div class="testimonail-section mt-150 mb-150">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 text-center">
+				<div class="section-title">	
+					<h3 class="text-uppercase">customer review</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+					<div class="testimonial-sliders">
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avatar1.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Saira Hakim <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avatar2.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>David Niph <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avatar3.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Jacob Sikim <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end testimonail-section -->
 
 	<!-- shop banner -->
 	<section class="shop-banner-2">
@@ -425,25 +472,25 @@
 							<div class="d-flex flex-wrap justify-content-between">
 								<a  class="d-flex flex-column align-items-center col-lg-3 col-md-6" style="width: auto; padding-left: 0; padding-right: 0;" href="#">
 									<div class="instafeed-container">
-										<img src="https://scontent.cdninstagram.com/v/t39.30808-6/458258847_851378613768865_8013451655052834981_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=WJHSsPgAxmUQ7kNvgGVqq7K&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=A9Y1e-AoWsbzmbvTm2oLOLN&oh=00_AYACSeZQmUCCEg6P2VZT0eJbkoNF3HoCsw7IjRmnv4J2YQ&oe=672698EC" class="card-img-top" alt="...">
+										<img src="./assets/img/insta/insta-01.jpg" class="card-img-top" alt="...">
 										<div style="width:100%;height:100%;" class="instafeed-overlay "></div>
 									</div>
 								</a>
 								<a  class="d-flex flex-column align-items-center col-lg-3 col-md-6" style="width: auto; padding-left: 0; padding-right: 0;" href="">
 									<div class="instafeed-container">
-										<img src="https://scontent.cdninstagram.com/v/t39.30808-6/448157558_801709085402485_6725697479162042742_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=BGY3clM1yfQQ7kNvgGbD-rS&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=A9Y1e-AoWsbzmbvTm2oLOLN&oh=00_AYD-Lq98XzsGAzbZWVaKzHWgkO8jPXKLvV-kaQovXufBqw&oe=67269FDD" class="card-img-top" alt="...">
+										<img src="./assets/img/insta/insta-02.jpg" class="card-img-top" alt="...">
 										<div style="width:100%;height:100%;" class="instafeed-overlay "></div>
 									</div>
 								</a>
 								<a  class="d-flex flex-column align-items-center col-lg-3 col-md-6" style="width: auto; padding-left: 0; padding-right: 0;" href="">
 									<div class="instafeed-container">
-										<img src="https://scontent.cdninstagram.com/v/t39.30808-6/441880667_784843930422334_5868923273190370331_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=18de74&_nc_ohc=ipApN0EYGNkQ7kNvgGr00_K&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=A9Y1e-AoWsbzmbvTm2oLOLN&oh=00_AYBgEmRX_ltxTFiv6a6yi7PPkWS3AgVQqJYxPN7L8aIPLw&oe=67268D39" class="card-img-top" alt="...">
+										<img src="./assets/img/insta/insta-03.jpg" class="card-img-top" alt="...">
 										<div style="width:100%;height:100%;" class="instafeed-overlay "></div>
 									</div>
 								</a>
 								<a  class="d-flex flex-column align-items-center col-lg-3 col-md-6" style="width: auto; padding-left: 0; padding-right: 0;" href="">
 									<div class="instafeed-container">
-										<img src="https://scontent.cdninstagram.com/v/t39.30808-6/435061211_764659412440786_8226777923861554711_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=18de74&_nc_ohc=9BB0jJp1LSoQ7kNvgEMn1FQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=A9Y1e-AoWsbzmbvTm2oLOLN&oh=00_AYB4st9li7swuWijo9LQiLmzCC0JCuBz51GhGZDT2n9fDw&oe=672683B9" class="card-img-top" alt="...">
+										<img src="./assets/img/insta/insta-04.jpg" class="card-img-top" alt="...">
 										<div style="width:100%;height:100%;" class="instafeed-overlay "></div>
 									</div>
 								</a>

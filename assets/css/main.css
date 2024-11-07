@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.1px;
@@ -145,7 +145,7 @@ h6, .h6 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.1px;
@@ -410,7 +410,7 @@ p:last-child {
 }
 
 a.boxed-btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   display: inline-block;
   background-color: #339900;
   color: #fff;
@@ -418,7 +418,7 @@ a.boxed-btn {
 }
 
 a.bordered-btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   display: inline-block;
   color: #fff;
   border: 2px solid #339900;
@@ -553,6 +553,8 @@ nav.main-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 nav.main-menu ul li {
@@ -637,7 +639,7 @@ ul.sub-menu li:last-child {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .mean-container a.meanmenu-reveal {
@@ -738,8 +740,8 @@ nav.main-menu li a {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  /* background: transparent;
-  backdrop-filter: blur(5px); */
+  background: transparent;
+  backdrop-filter: blur(5px);
 
 }
 
@@ -856,6 +858,59 @@ a.mobile-show {
   text-transform: uppercase;
   letter-spacing: 7px;
 }
+
+/*  */
+/* Mega Menu Styling */
+.mega-menu {
+	position: absolute;
+	display: none;
+  
+	top: 100%;
+	left: 0;
+	width: 600px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.has-mega-menu:hover .mega-menu {
+	display: flex;
+}
+.mega-menu-section {
+	width: 50%;
+	padding: 10px;
+  text-align: start;
+}
+.mega-menu-section h4 {
+	font-size: 1.2rem;
+	color: #333;
+	margin-bottom: 10px;
+}
+.mega-menu-section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+}
+.mega-menu-section ul li {
+	margin-bottom: 8px;
+}
+.mega-menu-section ul li a {
+	color: #555;
+	font-weight: 600;
+	text-decoration: none;
+	transition: 0.3s;
+}
+nav.main-menu .mega-menu-section ul li a {
+  color: #bdbdbd;
+  padding: 0.2rem 1rem;
+}
+nav.main-menu .mega-menu-section ul li a:hover {
+	color: #339900;
+}
+
 
 /* -----------------------------------------------------------------------------
 
@@ -2651,7 +2706,7 @@ ul.social-link-team li a {
 }
 
 p.product-price {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -2665,7 +2720,7 @@ p.product-price span {
 }
 
 a.cart-btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   display: inline-block;
   background-color: #339900;
   color: #fff;
@@ -2675,7 +2730,7 @@ a.cart-btn {
 }
 
 a.cart-btn-w-bg {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   display: inline-block;
   background-color: #339900;
   color: #fff;
@@ -2994,4 +3049,23 @@ table.order-details tbody td {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+
+
+
+
+
+
+
+.nav-item {
+  padding: 0.5rem 0xp;
+}
+
+.dropdown-hover:hover>.dropdown-menu {
+display: inline-block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+pointer-events: none;
 }
